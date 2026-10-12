@@ -1,0 +1,5 @@
+# sample scores
+alice 82
+bob 75
+
+carol 91
