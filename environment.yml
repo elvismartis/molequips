@@ -2,4 +2,4 @@ name: moltools
 channels:
   - conda-forge
 dependencies: []
-prefix: /opt/homebrew/Caskroom/miniforge/base/envs/moltools
+
