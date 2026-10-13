@@ -13,15 +13,15 @@ bfac = []
 atmname = []
 with open('./files/1EVE.pdb', 'r') as f: # opens the file, closes it automatically
     for line in f:                # one line at a time
-        line = line.strip()       # removes the newline and spaces at the ends
+        line = line.strip()       # removes the newline and spaces at the ends (NOT A GOOD IDEA FOR PDB)
         #print(line)
         if not line:              # true for empty line
             continue              # jump to the next line
-        if line.startswith("ATOM"):  # Only extract files if line startswith this "ATOM" or "HETAM"
+        if line.startswith("ATOM"):  # Only extract files if line startswith this "ATOM" or "HETATM"
             if "ALA" in line:          # extract certain residues with "XXX"
                 parts = line.split()      # splits lines as separate words
-                bfac.append(parts[2])
-                atmname.append(parts[9])
+                bfac.append(parts[9])
+                atmname.append(parts[2])
 
 
 #print(scorelist_names, scorelist_scores)
