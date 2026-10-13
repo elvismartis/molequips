@@ -1,5 +1,0 @@
-name: moltools
-channels:
-  - conda-forge
-dependencies: []
-
